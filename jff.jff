@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<structure>
+
+	<type>pda</type>
+
+	<automaton>
+
+		
+
+		<state id="0" name="q_start">
+
+			<x>141.0</x>
+
+			<y>164.0</y>
+
+			<initial />
+
+		</state>
+
+		<state id="1" name="q_locked">
+
+			<x>301.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="2" name="q1">
+
+			<x>451.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="3" name="q2">
+
+			<x>601.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="4" name="q3">
+
+			<x>751.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="5" name="q4">
+
+			<x>901.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="6" name="q5">
+
+			<x>1051.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="7" name="q6">
+
+			<x>1201.0</x>
+
+			<y>162.0</y>
+
+		</state>
+
+		<state id="8" name="q_open">
+
+			<x>1352.0</x>
+
+			<y>164.0</y>
+
+			<final />
+
+		</state>
+
+		<state id="9" name="q_error">
+
+			<x>751.0</x>
+
+			<y>312.0</y>
+
+		</state>
+
+		
+
+		<transition>
+
+			<from>9</from>
+
+			<to>9</to>
+
+			<read />
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>2</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>5</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>4</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>1</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>7</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>6</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>0</from>
+
+			<to>1</to>
+
+			<read />
+
+			<pop />
+
+			<push>Z0</push>
+
+		</transition>
+
+		<transition>
+
+			<from>3</from>
+
+			<to>9</to>
+
+			<read>a</read>
+
+			<pop />
+
+			<push />
+
+		</transition>
+
+		<transition>
+
+			<from>7</from>
+
+			<to>8</to>
+
+			<read />
+
+			<pop>Z0</pop>
+
+			<push />
+
+		</transition>
+
+	<transition><from>1</from><to>2</to><read>5</read><pop /><push /></transition><transition><from>2</from><to>3</to><read>0</read><pop /><push /></transition><transition><from>3</from><to>4</to><read>2</read><pop /><push /></transition><transition><from>4</from><to>5</to><read>0</read><pop /><push /></transition><transition><from>5</from><to>6</to><read>1</read><pop /><push /></transition><transition><from>6</from><to>7</to><read>3</read><pop /><push /></transition></automaton>
+
+</structure>
